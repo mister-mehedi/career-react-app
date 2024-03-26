@@ -8,11 +8,13 @@ import {
 import './index.css'
 import Root from './Root/Root';
 import Home from './Home/Home';
+import ErrorPage from './ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
